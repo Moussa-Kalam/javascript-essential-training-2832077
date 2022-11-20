@@ -7,20 +7,43 @@
  * - Test the method by sending new values and checking the properties in the console.
  */
 
-const backpack = {
-  name: "Everyday Backpack",
-  volume: 30,
-  color: "grey",
-  pocketNum: 15,
-  strapLength: {
-    left: 26,
-    right: 26,
+const laptop = {
+  brand: "Dell",
+  language: "French",
+  status: false,
+  users: 2,
+  specifications: {
+    RAM: "8 gb",
+    ROM: "1 To",
+    keyboard: "AZERTY",
+    charger: 2,
   },
-  toggleLid: function (lidStatus) {
-    this.lidOpen = lidStatus;
+  newBrand(brand) {
+    this.brand = brand;
   },
-  newStrapLength: function (lengthLeft, lengthRight) {
-    this.strapLength.left = lengthLeft;
-    this.strapLength.right = lengthRight;
+  userNum(number) {
+    this.users = number;
+  },
+  isNew(status) {
+    this.status = status;
+  },
+  changeLang(lang) {
+    this.language = lang;
+  },
+  newRam(ram) {
+    this.RAM = ram;
+  },
+  newKeyboard(type) {
+    this.keyboard = type;
   },
 };
+
+// Change the brand of my laptop
+console.log("Current brand:", laptop.brand);
+laptop.newBrand("Lenovo");
+console.log("New brand:", laptop.brand);
+
+// Change the language setting of the laptop
+console.log("Current language set:", laptop.language);
+laptop.changeLang("English");
+console.log("New language set:", laptop.language);
