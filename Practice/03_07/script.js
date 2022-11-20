@@ -8,16 +8,15 @@
  * - Test your objects in the browser console by accessing the entire object and its specific properties.
  */
 
-const place = {
-    location: "Living room",
-    sofas: 6,
-    tables: 2,
-    wall: "yellow", 
-    fridge: false,
-    shelf : {
-        remote: 3,
-        disk: 23, 
-        glasses: 20, 
-        color: "brown"
-    }
-}
+const laptop = {
+  brand: "Dell",
+  language: "French",
+  isNew: false,
+  user: 2,
+  specifications: {
+    RAM: 8,
+    ROM: "1 To",
+    keyboard: "AZERTY",
+    charger: 2,
+  },
+};
