@@ -1,4 +1,11 @@
-/**
- * Note: This file is intentionally empty.
- * You can use it to test your skills at traversing the DOM using JavaScript.
- */
+// Traversing the DOM using JavaScript
+
+console.log(document.querySelector(".siteheader"));
+
+console.log(document.querySelectorAll("div"));
+
+console.log(document.querySelector(".backpack__features li:first-child"));
+
+console.log(document.querySelectorAll("div"));
+
+console.log(document.querySelectorAll(".rightlength input"));
